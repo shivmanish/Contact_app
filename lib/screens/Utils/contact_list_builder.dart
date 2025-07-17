@@ -30,7 +30,6 @@ class ContactListView extends ContactResourceListView<ContactStoreModel> {
     int index = objects.indexWhere(
       (element) => element.identifier == event.contect.identifier,
     );
-    print('============= index');
     if (index >= 0 && index < objects.length) {
       objects[index] = state.resource;
     }
@@ -76,7 +75,6 @@ class ContactListView extends ContactResourceListView<ContactStoreModel> {
       key: ValueKey(object.identifier),
       contact: object,
       onShowContactDetail: () {
-        print('============= object name : ${object.getDisplayableName()}');
         onAction(object);
       },
       onCallContact: () {},
@@ -124,7 +122,7 @@ class ContactListView extends ContactResourceListView<ContactStoreModel> {
   void onListingError(ContactResourceState state) {
     final errorState = state as ContactResourceErrorState;
     print(
-      '============= ${errorState.message} \n Something went wrong while fetching your kyc(s). \n try again later',
+      '============= ${errorState.message} \n Something went wrong. \n try again later',
     );
 
     // here can show Toast message

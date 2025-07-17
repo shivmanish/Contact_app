@@ -15,16 +15,12 @@ class _ContactsState extends State<Contacts> {
 
   @override
   void initState() {
-    print('================ init state is called');
     bloc = ContactBloc();
     globalBloc = context.read<ContactBloc>();
     _contactList = ContactListView(
       bloc: bloc,
       isFavorite: widget.isFavorite,
       onAction: (contact) {
-        print(
-          '============== from contct page : ${contact.getDisplayableName()}',
-        );
         showContactDetail(contact);
       },
     );
