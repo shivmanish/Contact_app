@@ -50,9 +50,19 @@ A simple contact management app built with Flutter. It allows users to create, v
 
 ## Screenshots
 
-![Home Screen Tab 1](screenshots/home_tab1.jpeg)
+## 🏠 Home Screen Tab 1
+<img src="screenshots/home_tab1.jpeg" alt="Home Screen Tab 1" width="300"/>
+<!-- ![Home Screen Tab 1](screenshots/home_tab1.jpeg) -->
+
+## 🏠 Home Screen Tab 2
 ![Home Screen Tab 2](screenshots/home_tab2.jpeg)
+
+## ➕ Create Contact Screen
 ![Create Contact](screenshots/create.jpeg)
+
+## 📝 Edit Contact Screen
 ![Update Contact](screenshots/update.jpeg)
+
+## 📋 Contact Details View
 ![Details Contact](screenshots/details.jpeg)
 
