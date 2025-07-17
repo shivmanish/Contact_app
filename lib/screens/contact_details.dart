@@ -2,21 +2,21 @@ part of contact_app;
 
 enum ContactActions { favorite, edit, delete }
 
-class JaxlContactDetailNew extends StatefulWidget {
+class ContactDetailNew extends StatefulWidget {
   final ContactStoreModel contact;
   final void Function() onDelete;
 
-  const JaxlContactDetailNew({
+  const ContactDetailNew({
     super.key,
     required this.contact,
     required this.onDelete,
   });
 
   @override
-  _JaxlContactDetailStateNew createState() => _JaxlContactDetailStateNew();
+  State<ContactDetailNew> createState() => _ContactDetailStateNew();
 }
 
-class _JaxlContactDetailStateNew extends State<JaxlContactDetailNew> {
+class _ContactDetailStateNew extends State<ContactDetailNew> {
   bool appBarToShow = false;
   late ContactStoreModel _contact;
   late final ContactBloc bloc;

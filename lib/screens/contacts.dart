@@ -83,7 +83,7 @@ class _ContactsState extends State<Contacts> {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return JaxlContactDetailNew(
+          return ContactDetailNew(
             key: ValueKey(contact.identifier),
             contact: contact,
             onDelete: () {
