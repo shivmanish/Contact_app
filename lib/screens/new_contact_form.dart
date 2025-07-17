@@ -111,7 +111,9 @@ class _CreateNewContactState extends State<CreateNewContact> {
         child: Scaffold(
           backgroundColor: Colors.white,
           appBar: AppBar(
-            title: const Text('Create Contact'),
+            title: Text(
+              '${widget.contact == null ? "Create" : "Update"} Contact',
+            ),
             backgroundColor: Colors.white,
           ),
           body: BlocListener<ContactBloc, ContactResourceState>(
