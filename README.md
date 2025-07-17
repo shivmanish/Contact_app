@@ -47,3 +47,12 @@ A simple contact management app built with Flutter. It allows users to create, v
    git clone https://github.com/your-username/your-repo-name.git
    cd your-repo-name
 
+
+## Screenshots
+
+![Home Screen Tab 1](screenshots/home_tab1.jpeg)
+![Home Screen Tab 2](screenshots/home_tab2.jpeg)
+![Create Contact](screenshots/create.jpeg)
+![Update Contact](screenshots/update.jpeg)
+![Details Contact](screenshots/details.jpeg)
+
